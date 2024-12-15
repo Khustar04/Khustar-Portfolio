@@ -1,0 +1,615 @@
+main {
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  background: linear-gradient(#181818c4, #18181861);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+ 
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  display: flex;
+  position: sticky;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #18181862;
+  background: linear-gradient(to left, #181818, #554311);
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+  list-style: none;
+  transition: transform 0.1s linear, color 0.2s ease;
+}
+
+nav li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+nav li:hover {
+  transform: scale(0.9);
+
+  color: orangered;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("svg/my\ logo\ -3.png"); /* Path to your image */
+  background-size: cover; /* Makes the image cover the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #ffffff;
+}
+
+.intro {
+  height: 90vh;
+  width: 100%;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+
+.box-1 {
+  height: 80%;
+  width: 50%;
+  overflow-x: hidden;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 55px;
+  font-size: 30px;
+  gap: 15px;
+  color: rgb(163, 163, 163);
+}
+
+.photo{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.photo img{
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.line-2 {
+  font-size: 50px;
+  color: orangered;
+  text-shadow: 0 0 10px #0f0f0ec9;
+}
+
+.line-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-content {
+  width: 100%;
+  height: 42rem;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.about-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  position: relative;
+  top: 75px;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bar {
+  width: 80px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: orangered;
+  border: 1px solid rgba(255, 68, 0, 0.525);
+}
+
+.info-about {
+  color: rgb(168, 162, 162);
+  font-weight: 700;
+  margin: 0px 150px;
+  text-align: center;
+}
+
+.about-section {
+  width: 100%;
+  height: 120%;
+  top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  gap: 25px;
+}
+
+.section-1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+}
+
+.btn-top {
+  position: relative;
+  top: 10px;
+  width: 148px !important;
+}
+
+.section-1 p {
+  color: rgb(168, 162, 162);
+}
+
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to wrap onto the next row */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  /* Centers the section if needed */
+  max-width: 800px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  top: -150px;
+}
+
+.project-section {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: relative;
+  top: 120px;
+  gap: 25px;
+}
+
+.project-cards{
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-button-left {
+  left: 0;
+}
+
+.nav-button-right {
+  right: 0;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(2%);
+  z-index: 10;
+  cursor: pointer;
+  width: 106px;
+  padding: 40px 40px;
+  border-radius: 50%;
+  background-color: unset;
+
+
+
+}
+
+
+/* .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-flow: column; 
+  gap: 20px;
+  padding: 20px; 
+  height: 75vh;
+  background-color: #330808;
+  overflow-x: scroll;
+ 
+} */
+.projects{
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next row */
+  justify-content: center;
+  gap: 20px;
+  width: 100%; /* Allow the container to grow naturally */
+  max-width: 1200px; /* Optional: Limit the maximum width */
+  margin: 0 auto; /* Center the container */
+  margin-top: 20px;
+  padding: 20px; 
+  overflow-x: scroll;
+  height: 75vh;
+  overflow-y: hidden;
+  position: relative;
+  flex-direction: column;
+  scrollbar-width: none; /* Thin scrollbar */
+  scrollbar-color: #888 #c90e0e; /* Thumb color and track color */
+  scroll-behavior: smooth;
+  
+  align-items: center;
+ 
+  
+}
+
+.projects::-webkit-scrollbar{
+  height: 12px;
+  background-color: #330808;
+}
+
+.projects::-webkit-scrollbar-track{
+  background-color: #f1f1f1; 
+  border-radius: 10px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  /* Draggable scrolling handle */
+  background-color: #972b2b; 
+  border-radius: 10px;
+  
+  /* Optional: add border to create padding around the thumb */
+  border: 3px solid #1b0ced;
+}
+
+/* Project Item Styles */
+.project-item {
+  width: calc(33.33% - 20px); /* 3 cards per row with 20px gap */
+  min-width: 200px; /* Prevent cards from getting too small */
+ background-color: #330808;
+  border-radius: 10px;
+  /* Rounded corners for the project boxes */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Slight shadow for a card effect */
+  height: 400px;
+  /* Fixed height for each project box */
+  display: flex;
+  flex-direction: column;
+  /* Align content vertically */
+  justify-content: space-between;
+  /* Distribute content (image, title, description) evenly */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.cal-img{
+  background-image: url(svg/age\ calculator\ img.png);
+}
+.bookmark-img{
+  background-image: url(svg/book\ mark.png);
+}
+.gradient-img{
+  background-image: url(svg/Gradient\ color\ generator.png);
+}
+
+.cal-img::before{
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Inner shadow */
+  z-index: 1; /* Ensure it stays below the text */
+  pointer-events: none; /* Prevent interaction with the shadow */
+}
+.gradient-img::after{
+  filter: brightness(0.2); /* Inner shadow */
+  z-index: 1; /* Ensure it stays below the text */
+  pointer-events: none; /* Prevent interaction with the shadow */
+}
+
+/* Image Styles */
+.project-item img {
+  width: 100%;
+  height: 200px;
+  /* Fixed height for the image */
+  object-fit: cover;
+  /* Ensures the image fills the box without stretching */
+  border-radius: 8px;
+  /* Rounded corners for the image */
+}
+
+/* Title and Description */
+.project-item a {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  color: orangered;
+}
+.project-item p {
+  margin-top: 10px;
+  color: white;
+  font-size: 1em;
+  z-index: 2;
+}
+
+/* Hover Effect */
+.project-item:hover {
+  transform: translateY(-10px);
+  /* Slightly lift the project box on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  /* Increase shadow on hover */
+}
+
+.form-section {
+  width: 100%;
+ min-height: 60rem;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: relative;
+  top: 120px;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* From Uiverse.io by aadium */
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #330808, #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 40%;
+  height: 80vh;
+}
+
+.form::before {
+  content: "";
+  background-image: linear-gradient(45deg, #ff0000, #ffb700);
+  height: 81vh;
+  width: 41%;
+  position: absolute;
+  margin-top: -34px;
+  margin-left: px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+.button {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #ff5900;
+  color: black;
+  width: 200px; /* Set a fixed width for the button */
+  padding: 0.7em 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #66da4300;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid #ff5900;
+  background: #00000000;
+  color: #ff5900;
+}
+
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 40px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #9b725b;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 16px); /* Adjusted for consistent padding */
+  padding: 8px;
+  height: 250px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  resize: none; /* Allows vertical resizing */
+}
+
+.textarea::placeholder {
+  color: #9b725b;
+  opacity: 0.7; /* Makes the placeholder slightly softer */
+}
+
+.textarea:focus {
+  border: 1px solid transparent; /* Removes extra outline */
+  border-bottom: 2px solid #ff5900; /* Highlights bottom border more */
+  background-color: transparent;
+  color: #ffffff;
+  transition: border-bottom 0.3s ease; /* Smooth focus transition */
+}
+
+footer {
+  background-color: #181818;
+  width: 100%;
+  height: 50vh;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.f-content{
+    width: 100%;
+    height: 65%;
+    display: flex;
+
+}
+
+.f-about{
+    width: 65%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+   gap: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+   padding: 45px 90px;
+}
+.f-about p{
+    font-size: 14px;
+}
+.h1-font-size{
+    font-size: 1.50em;
+}
+.f-social{
+    width: 45%;
+    height: 100%;
+   
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 20px 20px;
+  padding-top: 40px;
+  gap: 15px;
+}
+
+.f-bar{
+    width: 90%;
+    height: 1px;
+    background-color: #454944;
+   margin-top: 10px;
+}
+.f-end{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 20px;
+  gap: 10px;
+  font-size: 11px;
+  
+}
+
+.f-end a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    font-weight: bolder;
+}
+

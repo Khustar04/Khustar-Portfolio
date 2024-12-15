@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  height: 100%;
+  overflow: hidden;
+
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  overscroll-behavior: none;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  background: #ba8b02;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #181818, #ba8b02);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: sans-serif;
+  
+ 
+}
+
+.navbar-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.color-orange {
+  color: orangered;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 106px;
+  padding: 10px 20px;
+  background-color: orangered;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+button:hover {
+  background-color: rgba(255, 34, 0, 0.498);
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+button:active {
+  transform: scale(1); /* Returns to normal size when clicked */
+}
+
+.skill-tag-1 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 88 12 / var(--tw-bg-opacity));
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.top-30px {
+  position: relative;
+  top: -40px;
+}
+
+.navOpenBtn,
+.navCloseBtn {
+  display: none;
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.response-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.response-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* From Uiverse.io by wilsondesouza */ 
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 8px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="phone"] .filled,
+  .example-2 .icon-content a[data-social="phone"] ~ .tooltip {
+    background-color: #69f356;
+  }
+  

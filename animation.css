@@ -1,0 +1,78 @@
+.navbar li {
+    position: relative;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: orangered;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+.box-1 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.box-1.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.fade-up, .fade-left, .fade-right, .fade-in {
+    opacity: 0;
+    will-change: transform, opacity;
+    pointer-events: none;
+    transition: all 0.7s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.fade-up {
+    transform: translateY(35px);
+    
+}
+
+.fade-left {
+    transform: translateX(-50px);
+}
+
+.fade-right {
+    transform: translateX(50px);
+}
+
+.fade-up.in-view,
+.fade-left.in-view,
+.fade-right.in-view,
+.fade-in.in-view {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+    pointer-events: auto;
+}
+
+.skill-tag-1 {
+    transform: translateY(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-tag-1:hover {
+    transform: translateY(-5px);
+}
+
+.project-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
