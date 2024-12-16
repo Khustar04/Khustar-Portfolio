@@ -333,7 +333,6 @@ nav li:hover {
 .project-item {
   width: calc(33.33% - 20px); /* 3 cards per row with 20px gap */
   min-width: 200px; /* Prevent cards from getting too small */
- background-color: #330808;
   border-radius: 10px;
   /* Rounded corners for the project boxes */
   padding: 20px;

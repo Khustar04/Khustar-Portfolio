@@ -178,7 +178,7 @@ function initSmallScreenFeature() {
       },
       {
         root: container,
-        threshold: 0.2, // Trigger when 50% of card is visible
+        threshold: 0.1, // Trigger when 50% of card is visible
       }
     );
 
