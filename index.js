@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Download CV requests -------->
 document.getElementById('downloadCV').addEventListener('click', function() {
     // REPLACE THIS WITH YOUR ACTUAL RESUME URL
-    const resumeUrl = 'https://drive.google.com/drive/folders/1MwkJFpOkOem_07twr47CRiZ0uCEvnfFB?dmr=1&ec=wgc-drive-globalnav-goto';
+    const resumeUrl = 'https://drive.google.com/file/d/1KHCyzm4XLj2Y0A_XK2C-OzZbnrWmCymb/view?usp=drive_link';
     
     // Create a temporary anchor element
     const link = document.createElement('a');
